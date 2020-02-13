@@ -1,0 +1,10 @@
+.peperuka{
+  float: left;
+  width: 300px;
+  height: 100%;
+}
+.peperuka p{
+  color: aquamarine;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
