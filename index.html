@@ -5,15 +5,21 @@
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
   </head>
-  <body class="text-center">
-    <h1 class="jumbotron"> Hey Wanna Know your Akan Name </h1>
-    <h4>A simple application that tells you your Akan name</h4>
-    <div>
+  <body class="container">
+    <div class="text-center">
+      <h1 class="jumbotron"> Hey Wanna Know your Akan Name </h1>
+      <h4>A simple application that tells you your Akan name</h4>
+    </div>
+
+    <div class="text-center">
       <h3>Testimonials</h3>
       <div>
         <p>Cards</p>
         <p>Blocked Quotes</p>
       </div>
+    </div>
+
+    <div>
       <form>
         <div class="form-group">
           <label for="DayOfBirth">Please Enter your day of birth</label>
@@ -24,11 +30,16 @@
           <input type="number" class="form-control" placeholder="MM" id="month">
         </div>
         <div class="form-group">
-          <label for="YearOfBirth">Please Enter your Year of birth</label>
-          <input type="number" class="form-control" placeholder="YYYY" id="year">
+          <label for="YearOfBirth1">Please Enter the first 2 digits of your Year of birth</label>
+          <input type="number" class="form-control" placeholder="YY" id="year1">
+        </div>
+        <div class="form-group">
+          <label for="YearOfBirth2">Please Enter the last 2 digits of your Year of birth</label>
+          <input type="number" class="form-control" placeholder="YY" id="year2">
         </div>
         <button type="submit" class="btn btn-primary" id="button">Submit</button>
       </form>
+      
     </div>
   </body>
 </html>
