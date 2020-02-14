@@ -31,4 +31,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.leftimg
+.leftimg{
+  background-image: url('../images/left.jpg');
+  background-repeat: repeat-y;
+}
+.rightimg{
+  background-image: url('../images/right.jpg');
+  background-repeat: repeat-y;
+}
