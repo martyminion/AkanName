@@ -10,8 +10,6 @@
   <body class="container bdbg">
     <div class="text-center">
       <h1 class="jumbotron jmbg"> Hey Wanna Know your Akan Name </h1>
-
-      <h4>A simple application that tells you your Akan name</h4>
       <blockquote class="quote">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given 
         their first name as a 'day name' which corresponds to the day in the week they were born. 
         Here are Ghanian day names.</blockquote>
@@ -31,32 +29,46 @@
       </p>
     </div>
 
-    <div>
-      <form>
-        <div class="form-group">
-          <label for="DayOfBirth">Please Enter your day of birth</label>
-          <input type="number" class="form-control" placeholder="DD" id="dd">
+    <div class="row">
+      <div class="col-md-2">
+        <p>hhshsh</p>
+      </div>
+      
+      <div class="col-md-8"> 
+        <div>
+          <form>
+            <div class="form-group">
+              <label for="DayOfBirth">Please Enter your day of birth</label>
+              <input type="number" class="form-control" placeholder="DD" id="dd">
+            </div>
+            <div class="form-group">
+              <label for="MonthOfBirth">Please Enter your Month of birth</label>
+              <input type="number" class="form-control" placeholder="MM" id="month">
+            </div>
+            <div class="form-group">
+              <label for="YearOfBirth1">Please Enter your Year of birth</label>
+              <input type="number" class="form-control" placeholder="YYYY" id="year">
+            </div>
+            <div class="form-check-inline bt">
+              <label class="form-check-label">
+              <input type="radio" id="gendm" class="form-check-input" name="optradio" value="male">Male</label>
+            </div>
+            <div class="form-check-inline bt">
+              <label class="form-check-label">
+              <input type="radio" id="gendf" class="form-check-input" name="optradio" value="female">Female</label>
+            </div>
+            <br><br>
+           <button onclick="Days()" type="submit" class="btn btn-primary" id="button">Submit</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="MonthOfBirth">Please Enter your Month of birth</label>
-          <input type="number" class="form-control" placeholder="MM" id="month">
-        </div>
-        <div class="form-group">
-          <label for="YearOfBirth1">Please Enter your Year of birth</label>
-          <input type="number" class="form-control" placeholder="YYYY" id="year">
-        </div>
-        <div class="form-check-inline bt">
-          <label class="form-check-label">
-          <input type="radio" id="gendm" class="form-check-input" name="optradio" value="male">Male</label>
-        </div>
-        <div class="form-check-inline bt">
-          <label class="form-check-label">
-          <input type="radio" id="gendf" class="form-check-input" name="optradio" value="female">Female</label>
-        </div>
-        <br><br>
-       <button onclick="Days()" type="submit" class="btn btn-primary" id="button">Submit</button>
-      </form>
+      </div>
+
+      <div class="col-md-2">
+        
+      </div>
+
     </div>
+    
     
     <script src="js/scripts.js"></script> 
   </body>
