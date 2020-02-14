@@ -1,76 +1,113 @@
-var malenames = ["Kwasi","Kwadwo","Kwadena","Kwaku","Yaw","Kofi","Kwame"];
-var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var femalenames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-
-var CC = document.getElementById("year1").value;
-var DD = document.getElementById("day").value;
-var YY = document.getElementById("year2").value;
-var MM = document.getElementById("month").value;
-
-var DayCalc = function (CC,YY,DD,MM){
-  var yearcode = ((YY + (YY/4))%7);
-  var monthcode;
-
-  if (MM === 01) {
-    monthcode = 0  
-  }
-  else if (MM===02) {
-    monthcode = 3
-  }
-  else if (MM===03) {
-    monthcode = 3
-  }
-  else if (MM===04) {
-    monthcode = 6
-  }
-  else if (MM===05) {
-    monthcode = 1
-  }
-  else if (MM===06) {
-    monthcode = 4
-  }
-  else if (MM===07) {
-    monthcode = 6
-  }
-  else if (MM===08) {
-    monthcode = 2
-  }
-  else if (MM===09) {
-    monthcode = 5
-  }
-  else if (MM===10) {
-    monthcode = 0
-  }
-  else if (MM===11) {
-    monthcode = 3
-  }
-  else if (MM===12) {
-    monthcode = 5
-  }
-  else{
-    alert("Enter a valid Month");
-  }
-  var centcode;
-  switch(CC){
-    case 18:
-      centcode=2;
-      break;
-    case 19:
-      centcode=0;
-      break;
-    case 20:
-      centcode=6;
-      break;
-    case 21:
-      centcode=4;
-      break;
-    case 22:
-      centcode=2;
-      break;
-    default:
-      alert("Please enter valid century")
-  }
-  var leapyr;
 
 
-}
+ document.getElementById("button").addEventListener("click", function(event){
+  event.preventDefault()
+})
+  //Zeller Function
+  function Days(){
+    var DD = document.getElementById("dd").value;
+    var YY = document.getElementById("year").value;
+    var MM = document.getElementById("month").value;
+    var genderm = document.getElementById("gendm").value;
+    var genderf = document.getElementById("gendf").value;
+    var malenames = ["Kwasi","Kwadwo","Kwadena","Kwaku","Yaw","Kofi","Kwame"]
+    var femalenames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
+
+    //using an inbuilt function
+    var birth = new Date(MM+'/'+DD+'/'+YY);
+    var siku = birth.getDay()
+    
+    if (siku == 0)
+    {
+        Day = "Sunday";
+    }
+    else if (siku == 1)
+    {
+        Day = "Monday";
+    }
+    else if (siku == 2)
+    {
+        Day = "Tuesday";
+    }
+    else if (siku == 3)
+    {
+        Day = "Wednesday";
+    }
+    else if (siku == 4)
+    {
+        Day = "Thursday";
+    }
+    else if (siku == 5)
+    {
+        Day = "Friday";
+    }
+    else
+    {
+        Day = "Saturday";
+    }
+
+    if (document.getElementById('gendm').checked) {
+      document.getElementById("akan").innerText = "Your Akan name is "+malenames[siku]+" because you were born on " +Day
+      
+    }
+    else if (document.getElementById('gendf').checked){
+      document.getElementById("akan").innerText = "Your Akan name is "+ femalenames[siku]+" because you were born on " +Day
+      
+    }
+    else{
+      document.getElementById("akan").innerHTML = "I cannot get your Akan name";  
+    }
+  
+
+  }
+  
+
+
+//Using Zeller
+/*var Day = "";
+  
+    if (MM < 3)
+    {
+        MM = MM + 12;
+        YY = YY - 1;
+    }
+    
+    var C = Math.floor(YY / 100);
+    var K = YY - (100 * C);
+  
+    var S = Math.floor(2.6 * MM - 5.39) + Math.floor(K / 4) + Math.floor(C / 4) + DD + K - (2 * C);
+  
+    var ans = S - (7 * Math.floor(S / 7));
+    
+    if (ans == 0)
+    {
+        Day = "Sunday";
+    }
+    else if (ans == 1)
+    {
+        Day = "Monday";
+    }
+    else if (ans == 2)
+    {
+        Day = "Tuesday";
+    }
+    else if (ans == 3)
+    {
+        Day = "Wednesday";
+    }
+    else if (ans == 4)
+    {
+        Day = "Thursday";
+    }
+    else if (ans == 5)
+    {
+        Day = "Friday";
+    }
+    else
+    {
+        Day = "Saturday";
+    }*/
+//using the formula from LMS
+//var daysofweek = Math.trunc(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7)
+//var CC = document.getElementById("year1").value;
+//var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]

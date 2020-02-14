@@ -3,7 +3,9 @@
   <head>
     <title>Akan Name</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+  
   </head>
   <body class="container">
     <div class="text-center">
@@ -18,28 +20,38 @@
         <p>Blocked Quotes</p>
       </div>
     </div>
+    <div  class = "text-center">
+      <p id="akan" class="cl">
 
+      </p>
+    </div>
     <div>
       <form>
         <div class="form-group">
           <label for="DayOfBirth">Please Enter your day of birth</label>
-          <input type="number" class="form-control" placeholder="DD" id="day">
+          <input type="number" class="form-control" placeholder="DD" id="dd">
         </div>
         <div class="form-group">
           <label for="MonthOfBirth">Please Enter your Month of birth</label>
           <input type="number" class="form-control" placeholder="MM" id="month">
         </div>
         <div class="form-group">
-          <label for="YearOfBirth1">Please Enter the first 2 digits of your Year of birth</label>
-          <input type="number" class="form-control" placeholder="YY" id="year1">
+          <label for="YearOfBirth1">Please Enter your Year of birth</label>
+          <input type="number" class="form-control" placeholder="YYYY" id="year">
         </div>
-        <div class="form-group">
-          <label for="YearOfBirth2">Please Enter the last 2 digits of your Year of birth</label>
-          <input type="number" class="form-control" placeholder="YY" id="year2">
+        <div class="form-check-inline">
+          <label class="form-check-label">
+          <input type="radio" id="gendm" class="form-check-input" name="optradio" value="male">Male</label>
         </div>
-        <button type="submit" class="btn btn-primary" id="button">Submit</button>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+          <input type="radio" id="gendf" class="form-check-input" name="optradio" value="female">Female</label>
+        </div>
+        <br>
+       <button onclick="Days()" type="submit" class="btn btn-primary" id="button">Submit</button>
       </form>
-      
     </div>
+    
+    <script src="js/scripts.js"></script> 
   </body>
 </html>
