@@ -3,7 +3,7 @@
   width: 300px;
   height: 100%;
   padding-bottom: 500px;
-  border: 2pxpx solid brown;
+  border: 2px solid rgb(199, 172, 172);
 }
 .peperuka p{
   color: aquamarine;
@@ -14,3 +14,19 @@
   padding: 10px;
   margin: 2px;
 }
+.quote{
+  font-family: 'Indie Flower', cursive;
+  font-style: italic;
+  font-size: 20px;
+
+}
+.jmbg{
+  background-image: url(../images/jumbo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Sriracha', cursive;
+}
+.jmbg h1{
+  color: azure;
+}
+
