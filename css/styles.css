@@ -26,7 +26,9 @@
   background-size: cover;
   font-family: 'Sriracha', cursive;
 }
-.jmbg h1{
-  color: azure;
+.bdbg{
+  background-image: url('../images/backg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
