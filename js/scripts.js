@@ -52,7 +52,10 @@
     if(MM<0 || MM>12){
       alert("Please Enter a valid Month")
     }
-    if(YY)
+
+    if(malenames[siku]===undefined){
+      document.getElementById("akan").innerText = "Please Enter Valid Details"
+    }
     
     if (document.getElementById('gendm').checked) {
       document.getElementById("akan").innerText = "Your Akan name is "+malenames[siku]+" because you were born on " +Day
