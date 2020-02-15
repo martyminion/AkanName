@@ -18,6 +18,12 @@ So give it a try
 {HTML
 CSS
 JavaScript}
+## BDD
+{Line of thought used to prepare the webApp:
+The user inputs their date of Birth and the getDay functions takes in those arguements and outputs a number between 0 and 6 which refer to days of the week, i.e. from Sunday to Saturday
+So if the result is a 5 it will point to Friday and 0 to Sunday and so on
+the same result will be used to point to the Akan Names
+depending on the Gender selected the the corresponding array will be used for Akan names}
 ## Support and contact details
 {You can get me on martyminion0@gmail.com}
 ### License
