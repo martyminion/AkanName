@@ -39,3 +39,11 @@
   background-image: url('../images/right.jpg');
   background-repeat: repeat-y;
 }
+.head{
+  font-family: 'Sriracha', cursive;
+  font-weight: 5px;
+  font-size: 25px;
+}
+.listat{
+  list-style-type: none;
+}
