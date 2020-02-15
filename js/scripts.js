@@ -46,7 +46,7 @@
         Day = "Saturday";
     }
 
-    
+
     
     if(DD<0 || DD>31){
       alert("Please Enter a valid day")
@@ -55,22 +55,25 @@
       alert("Please Enter a valid Month")
     }
 
-    if(malenames[siku]===undefined){
+    
+    if(malenames[siku]===undefined || femalenames[siku]===undefined ){
       document.getElementById("akan").innerText = "Please Enter Valid Details"
     }
-    
-    if (document.getElementById('gendm').checked) {
-      document.getElementById("akan").innerText = "Your Akan name is "+malenames[siku]+" because you were born on " +Day
-      
-    }
-    else if (document.getElementById('gendf').checked){
-      document.getElementById("akan").innerText = "Your Akan name is "+ femalenames[siku]+" because you were born on " +Day
-      
-    }
     else{
-      document.getElementById("akan").innerHTML = "I cannot get your Akan name";  
+      if (document.getElementById('gendm').checked) {
+        document.getElementById("akan").innerText = "Your Akan name is "+malenames[siku]+" because you were born on " +Day
+        
+      }
+      else if (document.getElementById('gendf').checked){
+        document.getElementById("akan").innerText = "Your Akan name is "+ femalenames[siku]+" because you were born on " +Day
+        
+      }
+      else{
+        document.getElementById("akan").innerHTML = "I cannot get your Akan name";  
+      }
     }
-  
+    
+    
 
   }
   
