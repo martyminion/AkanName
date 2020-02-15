@@ -30,15 +30,15 @@
           <form>
             <div class="form-group">
               <label for="DayOfBirth">Please Enter your day of birth</label>
-              <input type="number" class="form-control" placeholder="DD" id="dd">
+              <input type="number" min="01" max="31" class="form-control" placeholder="DD" id="dd">
             </div>
             <div class="form-group">
               <label for="MonthOfBirth">Please Enter your Month of birth</label>
-              <input type="number" class="form-control" placeholder="MM" id="month">
+              <input type="number" min="01" max="12" class="form-control" placeholder="MM" id="month">
             </div>
             <div class="form-group">
               <label for="YearOfBirth1">Please Enter your Year of birth</label>
-              <input type="number" class="form-control" placeholder="YYYY" id="year">
+              <input type="number" maxlength="4" class="form-control" placeholder="YYYY" id="year">
             </div>
             <div class="form-check-inline bt">
               <label class="form-check-label">

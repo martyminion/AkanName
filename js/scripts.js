@@ -45,6 +45,8 @@
     {
         Day = "Saturday";
     }
+
+    
     
     if(DD<0 || DD>31){
       alert("Please Enter a valid day")
