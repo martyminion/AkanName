@@ -1,6 +1,6 @@
 # {Akan Names}
 #### {This is a WebApp that tells you the day you were born from your birth date}, {14th February, 2020}
-#### By **{Your's Faithfully}**
+#### By **Your's Faithfully**
 ## Description
 {Akan Names, are from a Ghanian culture and it would be nice to know what Ghanian name you would have if you ghananian.
 So give it a try
@@ -9,11 +9,11 @@ So give it a try
 * You only need a working internet connection
 * A working browser (and you can view the webpage) martyminion.github.io/AkanName
 * Ubuntu / Windows OS
-* Install Git
-* And basic Linux commands
+* Install Git to make any adustments
+* And basic Linux commands to navigate through the directories
 {No further Dependencies}
 ## Known Bugs
-{A few screen relation issues when viewing on small screens}
+{Will take all year values even though we aren't past 2020}
 ## Technologies Used
 {HTML
 CSS
