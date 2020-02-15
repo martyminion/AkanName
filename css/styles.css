@@ -1,15 +1,3 @@
-.peperuka{
-  float: left;
-  width: 300px;
-  height: 100%;
-  padding-bottom: 500px;
-  border: 2px solid rgb(199, 172, 172);
-}
-.peperuka p{
-  color: aquamarine;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
 .bt{
   padding: 10px;
   margin: 2px;
@@ -43,9 +31,6 @@
   font-family: 'Sriracha', cursive;
   font-weight: 3px;
   font-size: 20px;
-}
-.listat{
-  list-style-type: none;
 }
 .footer{
   padding: 50px;

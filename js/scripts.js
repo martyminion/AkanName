@@ -1,15 +1,12 @@
-
-
- document.getElementById("button").addEventListener("click", function(event){
+document.getElementById("button").addEventListener("click", function(event){
   event.preventDefault()
 })
+
   //getDay Function
   function Days(){
     var DD = document.getElementById("dd").value;
     var YY = document.getElementById("year").value;
     var MM = document.getElementById("month").value;
-    //var genderm = document.getElementById("gendm").value;
-    //var genderf = document.getElementById("gendf").value;
     var malenames = ["Kwasi","Kwadwo","Kwadena","Kwaku","Yaw","Kofi","Kwame"]
     var femalenames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
 
@@ -49,6 +46,7 @@
     if(DD<0 || DD>31){
       alert("Please Enter a valid day")
     }
+
     if(MM<0 || MM>12){
       alert("Please Enter a valid Month")
     }
@@ -69,15 +67,12 @@
         document.getElementById("akan").innerHTML = "I cannot get your Akan name";  
       }
     }
-    
-    
-
   }
   
 
 
-//Using Zeller
-/*var Day = "";
+ //Using Zeller
+ /*var Day = "";
   
     if (MM < 3)
     {
