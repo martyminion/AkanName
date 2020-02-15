@@ -3,13 +3,13 @@
  document.getElementById("button").addEventListener("click", function(event){
   event.preventDefault()
 })
-  //Zeller Function
+  //getDay Function
   function Days(){
     var DD = document.getElementById("dd").value;
     var YY = document.getElementById("year").value;
     var MM = document.getElementById("month").value;
-    var genderm = document.getElementById("gendm").value;
-    var genderf = document.getElementById("gendf").value;
+    //var genderm = document.getElementById("gendm").value;
+    //var genderf = document.getElementById("gendf").value;
     var malenames = ["Kwasi","Kwadwo","Kwadena","Kwaku","Yaw","Kofi","Kwame"]
     var femalenames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
 
@@ -19,42 +19,39 @@
     
     if (siku == 0)
     {
-        Day = "Sunday";
+        Day = "Kwasiada";
     }
     else if (siku == 1)
     {
-        Day = "Monday";
+        Day = "Edwoada";
     }
     else if (siku == 2)
     {
-        Day = "Tuesday";
+        Day = "Ebenada";
     }
     else if (siku == 3)
     {
-        Day = "Wednesday";
+        Day = "Wukuada";
     }
     else if (siku == 4)
     {
-        Day = "Thursday";
+        Day = "Yawoada";
     }
     else if (siku == 5)
     {
-        Day = "Friday";
+        Day = "Efiada";
     }
     else
     {
-        Day = "Saturday";
+        Day = "Memeneda";
     }
 
-
-    
     if(DD<0 || DD>31){
       alert("Please Enter a valid day")
     }
     if(MM<0 || MM>12){
       alert("Please Enter a valid Month")
     }
-
     
     if(malenames[siku]===undefined || femalenames[siku]===undefined ){
       document.getElementById("akan").innerText = "Please Enter Valid Details"
